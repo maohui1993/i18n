@@ -26,7 +26,7 @@ export function t(key: string) {
     const searcher = key.split('.');
     
     let data = win.languages["en"];
-    if (_language !in win.languages) {
+    if (_language in win.languages) {
         data = win.languages[_language];
     }
     for (let i = 0; i < searcher.length; i++) {
